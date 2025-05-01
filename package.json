@@ -1,0 +1,35 @@
+{
+  "name": "threejs-samples",
+  "version": "1.0.0",
+  "description": "Three.js CSG sample",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "http-server -o",
+    "dev": "concurrently \"npm run watch\" \"npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/champierre/threejs-samples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/champierre/threejs-samples/issues"
+  },
+  "homepage": "https://github.com/champierre/threejs-samples#readme",
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "three": "^0.163.0",
+    "three-bvh-csg": "^0.0.16",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.7",
+    "@types/three": "^0.163.0",
+    "concurrently": "^8.2.2",
+    "http-server": "^14.1.1"
+  }
+}

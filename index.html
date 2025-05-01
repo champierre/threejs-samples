@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three.js CSG Sample</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.163.0/build/three.module.js",
+        "three/examples/jsm/exporters/STLExporter.js": "https://unpkg.com/three@0.163.0/examples/jsm/exporters/STLExporter.js",
+        "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.163.0/examples/jsm/controls/OrbitControls.js",
+        "three-bvh-csg": "https://unpkg.com/three-bvh-csg@0.0.16/build/index.module.js",
+        "three-mesh-bvh": "https://unpkg.com/three-mesh-bvh@0.7.0/build/index.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <script type="module" src="./dist/index.js"></script>
+</body>
+</html> 
