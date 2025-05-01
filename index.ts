@@ -40,7 +40,7 @@ box.material = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
 
 const cylinderGeometry = new THREE.CylinderGeometry(10, 10, 60, 64);
 const cutter = new Brush(cylinderGeometry);
-cutter.rotation.x = Math.PI/2;                     // 横倒しにするなど
+cutter.rotation.x = Math.PI/2;
 cutter.updateMatrixWorld();
 cutter.material = new THREE.MeshStandardMaterial({ color: 0xff0000, opacity: 0.5, transparent: true });
 
@@ -73,9 +73,8 @@ downloadButton.style.zIndex = '1000';
 document.body.appendChild(downloadButton);
 
 downloadButton.addEventListener('click', () => {
-  // 4) ブラウザなら download、Node.js なら fs.writeFileSync
   const blob = new Blob([stl], { type: 'text/plain' });
-  saveAs(blob, 'difference.stl');                    // FileSaver.js などでDL
+  saveAs(blob, 'difference.stl');
 });
 
 // 表示切替ボタンを追加
