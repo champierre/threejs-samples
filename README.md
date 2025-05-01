@@ -2,6 +2,8 @@
 
 Three.jsのサンプルコード集です。
 
+https://deepwiki.com/champierre/threejs-samples
+
 ## サンプル一覧
 
 ### CSG (Constructive Solid Geometry) サンプル
